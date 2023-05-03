@@ -2,6 +2,13 @@ import bpy
 from math import sqrt
 import collections
 
+from typing import NamedTuple
+
+class Point(NamedTuple):
+    x: float
+    y: float
+    z: float
+
 Point = collections.namedtuple('Point',['x','y','z'],defaults=[0,0,0])
 
 class Vector(Point):
